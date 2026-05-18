@@ -25,8 +25,8 @@
 
   - name: download catlogue code
     ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip 
-    dest: /tmp/catalogue.zip
+      url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip 
+      dest: /tmp/catalogue.zip
   - name: extract catalogue-code
     ansible.built.unarchive:
        src: /tmp/catalogue.zip
