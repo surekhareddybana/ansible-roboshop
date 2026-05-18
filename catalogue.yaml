@@ -20,8 +20,8 @@
       home: /app
   - name: create app directiory
     ansible.builtin.file:
-    path: /app
-    state: directiory
+      path: /app
+      state: directiory
 
   - name: download catlogue code
     ansible.builtin.get_url:
