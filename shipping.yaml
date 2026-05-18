@@ -4,8 +4,11 @@
   tasks:
   - name: install maven
     ansible.builtin.dnf:
-      name: maven
+      name: {{ item }}
       state: installed
+      loop:
+      - pymySQL
+      - maven
   - name: create system user
     ansible.builtin.user:
       name: roboshop
