@@ -67,3 +67,8 @@
       login_password: RoboShop@1
       login_host: mysql.banasurekha.shop
       login_db: cities
+  - name: import data
+    community.mysql.mysql_db:
+       login_user: root
+       login_password: RoboShop@1
+       login_host: mysql.banasurekha.shop
