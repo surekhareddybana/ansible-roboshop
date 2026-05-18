@@ -30,6 +30,7 @@
     ansible.builtin.unarchive:
        src: /tmp/catalogue.zip
        dest: /app
+       remote_src: true
 
   - name: install maven dependencies
     ansible.builtin.command: mvn clean package
