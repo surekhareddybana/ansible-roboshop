@@ -7,7 +7,7 @@
       name: "{{ item }}"
       state: installed
     loop:
-      - cryptography
+      
       - mysql
       - maven
   - name: install pymysql
