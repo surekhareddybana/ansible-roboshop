@@ -28,9 +28,9 @@
       path: /app
       state: directory
   - name: download shipping code
-  ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
-    dest: /tmp/shipping.zip
+    ansible.builtin.get_url:
+      url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
+      dest: /tmp/shipping.zip
    # this module thinks file exist on ansible control server, needs to extract on to remote machine
    # remote_src: yes means files already exist in catalogue server
   - name: extract shipping-code
