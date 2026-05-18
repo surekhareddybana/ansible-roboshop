@@ -4,8 +4,8 @@
   tasks:
   - name: install maven
     ansible.builtin.dnf:
-    name: maven
-    state: installed
+      name: maven
+      state: installed
   - name: create system user
     ansible.builtin.user:
       name: roboshop
