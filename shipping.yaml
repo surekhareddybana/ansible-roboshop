@@ -67,8 +67,10 @@
   #     login_password: RoboShop@1
   #     login_host: mysql.banasurekha.shop
   #     login_db: cities
-  - name: import data
-    community.mysql.mysql_db:
+  - name: import data # anible-playbook shipping.yaml --tags "import"
+    tags: 
+    - import
+    community.mysql.mysql_db: 
        name: all
        login_user: root
        login_password: RoboShop@1
